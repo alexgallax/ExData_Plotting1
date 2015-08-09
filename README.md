@@ -33,63 +33,52 @@ web site</a>:
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
+
 ## Loading the data
 
+* To reproduce plots making dataset file must be located in R working directory. It can be downloaded by <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">the link</a>.
 
+* The raw dataset in file has 2,075,259 rows and 9 columns.
 
+* We only use data from the dates 2007-02-01 and
+2007-02-02. So the scripts read the data from just those dates.
 
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
+* The Date and Time variables are converted to Date/Time classes in R using the `strptime()` and `as.Date()`
 functions.
 
-* Note that in this dataset missing values are coded as `?`.
+* Dataset missing values are coded as `?`.
 
 
 ## Making Plots
 
 Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. Your task is to
-reconstruct the following plots below, all of which were constructed
+varies over a 2-day period in February, 2007. The task is to
+reconstruct the example plots in `figue` folder, all of which were constructed
 using the base plotting system.
 
-First you will need to fork and clone the following GitHub repository:
+Examples were forked from the following GitHub repository:
 [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
 
 
-For each plot you should
+For each plot:
 
-* Construct the plot and save it to a PNG file with a width of 480
+* Constructed the plot and saved to a PNG file with a width of 480
 pixels and a height of 480 pixels.
 
-* Name each of the plot files as `plot1.png`, `plot2.png`, etc.
+* Each of the plot files is named as `plot1.png`, `plot2.png`, etc.
 
-* Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
+* Created a separate R code file (`plot1.R`, `plot2.R`, etc.) that
 constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
+the `plot1.png` plot. Code file includes code for reading
+the data so the plot can be fully reproduced. Also the code that creates the PNG file is included.
 
-* Add the PNG file and R code file to your git repository
-
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
+* The PNG file and R code file added to git repository.
 
 
-The four plots that you will need to construct are shown below. 
+The four plots from task examples and that are made by R scripts are shown below. 
+
+
+## Sample Plots
 
 
 ### Plot 1
@@ -111,4 +100,29 @@ The four plots that you will need to construct are shown below.
 ### Plot 4
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+
+
+
+## Plots made by R scripts
+
+
+### Plot 1
+
+
+![plot 1](plot1.png) 
+
+
+### Plot 2
+
+![plot 2](plot2.png) 
+
+
+### Plot 3
+
+![plot 3](plot3.png) 
+
+
+### Plot 4
+
+![plot 4](plot4.png)
 
